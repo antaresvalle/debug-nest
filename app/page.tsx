@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
-import ProductCard from "./components/ProductCard/ProductCard";
+import { Button } from "@radix-ui/themes"
 
 export default function Home() {
   return (
     <main>
-      <Link href="/users">Users</Link>
-      <ProductCard/>
+      <Button>
+            <Link href="/users">Users</Link>
+        </Button>
     </main>
   );
 }
